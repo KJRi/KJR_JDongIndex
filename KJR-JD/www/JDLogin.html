@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    	<head>
+    		<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    		<meta name="author" content="">
+    		<title>JDResign</title>
+    		<link href="css/bootstrap.min.css" rel="stylesheet">
+    		<style type="text/css">
+    			#form-main .form-group{
+    				width: 400px;
+    				height: 54px;
+    				margin-bottom: 40px;
+    			}
+    			#form-main .form-group input{
+    				height: 54px;
+    				border-radius: 0;
+    			}
+    		</style>
+    		
+    	</head>
+    	<body>
+    		
+    		<!--header-->
+    		<div class="container" style="background-color: #FFFFFF;width: 100%;height: 100px;box-shadow: 5px 5px 10px #F1F1F1;">
+    			<!--logo-->
+    			<a href="JDindex.html"><div  class="pull-left" style="background-image: url(image/resign-logo.png);background-size: 100%;height: 100px;width: 200px;display: inline-block;">
+    				
+    			</div>
+    			</a>
+    			<!--title-->
+    			<h3 class="pull-left" style="font-weight: 200;display: inline-block;margin-top: 36px;">欢迎登录</h3>
+    			<!--Resign-->
+    			<span class="pull-right" style="font-size: 16px;color: #999999;font-weight: 200;margin-top: 50px;margin-right: 20px;">
+    				没有帐号？ <a href="JDResign.html" style="color: #000000;">请注册</a>
+    			</span>
+    	    		</div>
+
+
+         <!--body-->
+         <div class="container" style="text-align: center;padding-top: 50px;">
+         	<!--main-body-->
+         	<div id="form-main">
+         		<!--form-->
+         		<!-- 登录表单 -->
+		<div class="container pull-left" style="width: 400px;">
+			<form class="form-horizontal" style="padding: 15px !important;">
+				<!-- 用户名 -->
+				<div class="form-group">
+					<input type="text" class="form-control" name="username" required pattern="^[a-zA-Z0-9\u4e00-\u9fa5]{4,12}$" placeholder="邮箱/用户名/已验证手机" />
+				</div>
+				
+				<!-- 密码 -->
+				<div class="form-group">
+					<input type="password" class="form-control" name="password" required pattern="^.{6,16}$" placeholder="密码" />
+				</div>
+				
+				
+				<!-- 提交按钮 -->
+				<input type="submit" class="form-control" style="color: #FFFFFF;background-color: #FA1110;width: 400px;height: 54px;border-radius: 0;" value="登录" />
+			</form>
+		</div>
+         	</div>
+         </div>
+
+    	
+    	    <!-- 模态框（Modal） -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    	<div class="modal-dialog">
+	    		<div class="modal-content">
+	    			<div class="modal-header">
+	    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	    				<h4 class="modal-title" id="myModalLabel">京东商城</h4>
+	    			</div>
+	    			<div class="modal-body">在这里添加一些文本</div>
+	    			<div class="modal-footer">
+	    				<button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+	    			</div>
+	    		</div>
+	    	</div>
+		</div>
+    	</body>
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/JDLogin.js" type="text/javascript" charset="utf-8"></script>
+</html>
